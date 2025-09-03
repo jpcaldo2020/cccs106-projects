@@ -7,7 +7,7 @@ ECHO is on.
 - **Name:** John Paul Caldo
 - **Student ID:** 231002310
 - **Program:** Computer Science
-- **Section:** 2B
+- **Section:** 3B
 
 ## Repository Structure 
 
