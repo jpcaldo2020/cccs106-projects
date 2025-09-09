@@ -61,6 +61,11 @@ All the commits and push are see through repository
 My ongoing setup mwhehehehe
 ![alt text](<Screenshot 2025-09-03 154243.png>)
 ![alt text](<Screenshot 2025-09-03 154251.png>)
+Personal GUI
+![alt text](<Screenshot 2025-09-09 230105.png>)
+![alt text](<Screenshot 2025-09-09 230111.png>)
+
+
 
 ### Git Repository
 - [ ] GitHub repository with commit history
