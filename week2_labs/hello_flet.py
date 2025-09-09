@@ -134,4 +134,4 @@ def main(page: ft.Page):
 
 # Run the application
 if __name__ == "__main__":
-    ft.app(target=main)
+    ft.app(target=main, view=ft.AppView.WEB_BROWSER, port=5000, host="0.0.0.0")
