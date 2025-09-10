@@ -34,6 +34,7 @@
 - **Notes:** None for now also
 
 ## Technical Skills Developed
+None
 
 ### Git Version Control
 - Understanding of repository concepts
@@ -49,27 +50,22 @@
 
 ## Challenges and Solutions
 
-I think none since the instructions are clear and with the help of some experts classmates it goes smooth
+Although since the instructions are clear and with the help of some experts classmates it goes smooth lastly I get some technical difficulties in hello_flet but its ok and its fine 
 
 ## Learning Outcomes
 
-
+I notice how creative and cooperative and collaborative git is and also how usefull it is mostly in collaborative work and since I encounter some difficulties in hello_flet.py I can say you should always be carefull and aware also learn how to debugg
 
 ## Screenshots
 All the commits and push are see through repository
-![alt text](<Screenshot 2025-09-03 153941.png>)
+![alt text](<lab2_screenshots/Screenshot 2025-09-03 153941.png>)
 My ongoing setup mwhehehehe
-![alt text](<Screenshot 2025-09-03 154243.png>)
-![alt text](<Screenshot 2025-09-03 154251.png>)
+![alt text](<lab2_screenshots/Screenshot 2025-09-03 154243.png>)
+![alt text](<lab2_screenshots/Screenshot 2025-09-03 154251.png>)
+Personal GUI
+![alt text](<lab2_screenshots/Screenshot 2025-09-09 230105.png>)
+![alt text](<lab2_screenshots/Screenshot 2025-09-09 230111.png>)
+Hello_Flet
+![alt text](<lab2_screenshots/Screenshot 2025-09-09 232359.png>)
 
-### Git Repository
-- [ ] GitHub repository with commit history
-- [ ] Local git log showing commits
 
-### GUI Applications
-- [ ] hello_flet.py running with all features
-- [ ] personal_info_gui.py with filled form and generated profile
-
-## Future Enhancements
-
-[Ideas for improving the applications or additional features to implement]
