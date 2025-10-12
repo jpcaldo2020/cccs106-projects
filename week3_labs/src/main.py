@@ -17,10 +17,10 @@ async def main(page: ft.Page):
     # Login Title
     login_title = ft.Text(
         "User Login",
+        text_align=ft.TextAlign.CENTER,
         size=20,
         weight=ft.FontWeight.BOLD,
         font_family="Arial",
-        text_align=ft.TextAlign.CENTER,
         color=ft.Colors.BLACK
     )
     
@@ -67,7 +67,6 @@ async def main(page: ft.Page):
         text_align=ft.TextAlign.LEFT
     )
     
-    # Login Logic Function
     async def login_click(e):
         # Create Dialogs for Feedback
         success_dialog = ft.AlertDialog(
@@ -114,7 +113,6 @@ async def main(page: ft.Page):
             page.update()
         
         # Validation and Database Logic
-        # Check if username or password are empty
         if not username_field.value or not password_field.value:
             page.overlay.append(invalid_input_dialog)
             invalid_input_dialog.open = True
@@ -123,21 +121,18 @@ async def main(page: ft.Page):
         
         try:
             # Establish database connection
-            connection = connect_db()
-            cursor = connection.cursor()
+            conn = connect_db()
+            cursor = conn.cursor()
             
-            # Execute parameterized SQL query to prevent SQL injection
-            query = "SELECT * FROM users WHERE username = %s AND password = %s"
+            # Execute parameterized SQL query
+            query = "SELECT * FROM user WHERE username = %s AND password = %s"
             cursor.execute(query, (username_field.value, password_field.value))
-            
-            # Fetch the result
             result = cursor.fetchone()
             
-            # Close the database connection
+            # Close database connection
             cursor.close()
-            connection.close()
+            conn.close()
             
-            # Check if user was found
             if result:
                 page.overlay.append(success_dialog)
                 success_dialog.open = True
@@ -153,7 +148,7 @@ async def main(page: ft.Page):
             database_error_dialog.open = True
             page.update()
     
-    # Login Button (white background)
+    # Create the Login Button
     login_button = ft.ElevatedButton(
         text="Login",
         on_click=login_click,
@@ -216,7 +211,7 @@ async def main(page: ft.Page):
         
         ft.Container(height=10),  # Spacing before button
         
-        # Login button centered horizontally
+        # Login button aligned to top-right
         ft.Container(
             content=login_button,
             alignment=ft.alignment.top_right,
